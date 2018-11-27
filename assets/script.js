@@ -78,21 +78,23 @@
     console.log(destination);
     console.log(firstTime);
     console.log(frequency);
+
+
+     // Create the new row
+  var newRow = $("<tr>").append(
+    $("<td>").text(trainName),
+    $("<td>").text(destination),
+    $("<td>").text(firstTime),
+    $("<td>").text(frequency),
+    
+  );
+
+  // Append the new row to the table
+  $("#listOfTrains > tbody").append(newRow);
+});
   
     
-    // Create the new row
-    var newRow = $("<tr>").append(
-      $("<td>").text(trainName),
-      $("<td>").text(destination),
-      $("<td>").text(firstTime),
-      $("<td>").text(frequency),
-      
-    );
-  
 
-    // Append the new row to the table
-    $("#trains-table > tbody").append(newRow);
-  });
   
   // Example Time Math
   // -----------------------------------------------------------------------------

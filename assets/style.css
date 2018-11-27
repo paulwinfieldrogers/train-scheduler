@@ -1,4 +1,12 @@
-/*#add-train-btn
+#add-train-btn{
 color: white;
 background-color: blue;
-}*/
+}
+
+
+#header-square{
+    padding: 15px;
+    width: 475px;
+    margin: 15px;
+    background-color: orange;
+}
