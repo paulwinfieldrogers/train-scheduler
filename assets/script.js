@@ -71,13 +71,8 @@
     var nextTrain = moment().add(tMinutesTillTrain, "minutes").format("hh:mm");
 
     // Next Train
-    //var nextTrain = moment().add(tMinutesTillTrain).format("hh:mm");
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
     
-   // var s1 = moment("23MAY68", 'DDMMMYY').format('YYYY-MM-DD');
-
-    
-   // var firstTime = moment($("#first-time").val().trim(), "hh:mm").format("hh:mm");
 
     // Train info
     console.log(trainName);
@@ -106,7 +101,6 @@
   // Append the new row to the table
   $("#listOfTrains > tbody").append(newRow);
 
- 
 });
   
   
