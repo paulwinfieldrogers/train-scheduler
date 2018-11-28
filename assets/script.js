@@ -68,10 +68,10 @@
     var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
     var tRemainder = diffTime % frequency;
     var tMinutesTillTrain = frequency - tRemainder;
-   
+    var nextTrain = moment().add(tMinutesTillTrain, "minutes").format("hh:mm");
 
     // Next Train
-    var nextTrain = moment().add(tMinutesTillTrain, "minutes");
+    //var nextTrain = moment().add(tMinutesTillTrain).format("hh:mm");
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
     
    // var s1 = moment("23MAY68", 'DDMMMYY').format('YYYY-MM-DD');
@@ -95,7 +95,7 @@
     $("<td>").text(trainName),
     $("<td>").text(destination),
     $("<td>").text(frequency),
-    $("<td>").text(firstTime),
+    $("<td>").text(nextTrain),
     $("<td>").text(tMinutesTillTrain)
     
   );
