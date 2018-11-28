@@ -45,8 +45,6 @@
     console.log(newTrain.firstTime);
     console.log(newTrain.frequency);
   
-    alert("New train added");
-  
     // Clears all of the text-boxes
     $("#train-name").val("");
     $("#destination").val("");
